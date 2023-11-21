@@ -99,7 +99,7 @@ body {
   font-weight: 600;
 } */
 
-.resume-btn {
+/* .resume-btn {
   right: 2vmax;
   top: 1vmax;
   z-index: 1111;
@@ -111,12 +111,52 @@ body {
   display: flex;
   align-items: center;
   background-color: #58c2f9;
-  /* box-shadow: 0 0 1vmax #fc626a; */
-  /* background: linear-gradient(to right, #fe7d84, #fc626a); */
-  /* box-shadow: 0 0 0.8vmax #49bff6; */
-  /* background: linear-gradient(to right, #45d6e7, #38cdfa); */
   transition: 0.5s all;
   cursor: pointer;
+} */
+
+.resume-btn {
+  display: inline-block;
+}
+
+.resume-btn {
+  display: inline-block;
+  color: #fff;
+  padding: 0.9vmax 1.5vmax;
+  line-height: 31px;
+  background: #111111;
+  border-radius: 5vmax;
+  text-align: center;
+  transition: .5s;
+  position: relative;
+  z-index: 1111;
+  overflow: hidden;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.resume-btn:hover {
+  color: #fff;
+  border: 1px solid #58c2f9;
+}
+
+.resume-btn:before {
+  position: absolute;
+  content: "";
+  /* top: 0; */
+  bottom: 0;
+  left: 0;
+  /* right: 0; */
+  height: 0%;
+  width: 100%;
+  background: #58c2f9;
+  border-radius: 5vmax;
+  z-index: -1;
+  transition: .5s;
+}
+
+.resume-btn:hover:before {
+  height: 100%;
 }
 
 .resume-btn a {
@@ -367,9 +407,8 @@ body {
 }
 
 #intro-div #prof {
-  height: 80px;
-
-  width: 40%;
+  height: 100px;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,6 +420,45 @@ body {
 #intro-div a img {
   height: 6.8vmax;
   /* background-color: blue; */
+}
+
+.about-btn {
+  margin-right: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-btn a {
+  font-size: 2.2vmax;
+  font-family: gilroy;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-btn img {
+  padding: 0px 0px 10px 5px;
+  height: 5.3vh;
+}
+
+.btn2 i {
+  font-size: 4.5vh;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.btn2:hover i {
+  color: #000;
+  transition: .5s;
+}
+
+.btn2:hover {
+  border: 1px solid #fa5a5a;
+}
+
+.btn2::before {
+  background: #fa5a5a;
 }
 
 /* ----Page2 responsive----- */
