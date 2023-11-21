@@ -2,14 +2,17 @@
   font-family: Moranga;
   src: url(./Fonts/moranga.ttf);
 }
+
 @font-face {
   font-family: Gilroy;
   src: url(./Fonts/Gilroy-Bold.otf);
 }
+
 @font-face {
   font-family: Gilroy;
   src: url(./Fonts/Gilroy-Semibold.otf);
 }
+
 @font-face {
   font-family: Gilroy;
   src: url(./Fonts/Gilroy-Medium.otf);
@@ -40,24 +43,38 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px 22px;
+  padding: 20px 22px 4px 22px;
   /* height: 120px; */
   width: 100%;
   position: fixed;
-  top: 2vh;
+  top: 0vh;
   overflow: hidden;
   z-index: 99;
+  /* filter: blur(4px); */
 }
 
-#nav > a {
+#nav::before {
+  content: '';
+  /* Create a pseudo-element to apply the blur effect */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  /* Adjust the blur amount as needed */
+}
+
+#sayan {
   font-size: 2.5vw;
   color: #fff;
   line-height: 2.4vw;
   text-decoration: none;
   width: 10vw;
+  z-index: 5;
 }
 
-.resume-btn {
+/* .resume-btn {
   right: 2vmax;
   top: 1vmax;
   z-index: 1111;
@@ -78,10 +95,9 @@ body {
 
 .resume-btn a {
   font-size: 1.1vmax;
-  /* background-color: red; */
   font-family: gilroy;
   font-weight: 600;
-}
+} */
 
 .resume-btn {
   right: 2vmax;
@@ -94,10 +110,11 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 1vmax #fc626a;
-  background: linear-gradient(to right, #fe7d84, #fc626a);
-  box-shadow: 0 0 0.8vmax #49bff6;
-  background: linear-gradient(to right, #45d6e7, #38cdfa);
+  background-color: #58c2f9;
+  /* box-shadow: 0 0 1vmax #fc626a; */
+  /* background: linear-gradient(to right, #fe7d84, #fc626a); */
+  /* box-shadow: 0 0 0.8vmax #49bff6; */
+  /* background: linear-gradient(to right, #45d6e7, #38cdfa); */
   transition: 0.5s all;
   cursor: pointer;
 }
@@ -120,10 +137,11 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 1vmax #fc626a;
+  background-color: #58c2f9;
+  /* box-shadow: 0 0 1vmax #fc626a;
   background: linear-gradient(to right, #fe7d84, #fc626a);
   box-shadow: 0 0 0.8vmax #49bff6;
-  background: linear-gradient(to right, #45d6e7, #38cdfa);
+  background: linear-gradient(to right, #45d6e7, #38cdfa); */
   transition: 0.5s all;
   cursor: pointer;
   display: none;
@@ -169,7 +187,7 @@ body {
     z-index: 99;
   }
 
-  #nav > a {
+  #nav>a {
     font-size: 7vw;
     color: #fff;
     line-height: 7vw;
@@ -447,19 +465,19 @@ body {
   position: relative;
 }
 
-#page3 > h3 {
+#page3>h3 {
   font-size: 4.8vmax;
   font-family: gilroy;
   margin-bottom: 0vmax;
 }
 
-#page3 > h3 span {
+#page3>h3 span {
   font-size: 4.8vmax;
   font-family: gilroy;
   color: #38cdfa;
 }
 
-#page3 > h5 {
+#page3>h5 {
   font-size: 2.2vmax;
   font-family: gilroy;
   margin-bottom: 1.4vmax;
@@ -503,19 +521,19 @@ body {
     position: relative;
   }
 
-  #page3 > h3 {
+  #page3>h3 {
     font-size: 4.4vmax;
     font-family: gilroy;
     margin-bottom: 0vmax;
   }
 
-  #page3 > h3 span {
+  #page3>h3 span {
     font-size: 4.4vmax;
     font-family: gilroy;
     color: #38cdfa;
   }
 
-  #page3 > h5 {
+  #page3>h5 {
     font-size: 2.2vmax;
     font-family: gilroy;
     font-weight: 500;
@@ -560,20 +578,20 @@ body {
   padding: 5vh 4vw;
 }
 
-#page4 > h2 {
+#page4>h2 {
   font-size: 3.7vmax;
   font-weight: 600;
   font-family: gilroy;
 }
 
-#page4 > h2 span {
+#page4>h2 span {
   font-size: 3.7vmax;
   font-weight: 600;
   font-family: gilroy;
   color: #fc626a;
 }
 
-#page4 > h4 {
+#page4>h4 {
   font-size: 1.85vmax;
   font-weight: 500;
   margin-bottom: 3vmax;
@@ -598,7 +616,7 @@ body {
   box-shadow: 1px 7px 20px rgba(0, 0, 0, 0.4);
 }
 
-#page4 > a {
+#page4>a {
   display: block;
   text-align: right;
   /* background-color: red; */
@@ -606,7 +624,7 @@ body {
   padding: 0 1vw;
 }
 
-#page4 > a img {
+#page4>a img {
   height: 4.2vmax;
 }
 
@@ -621,21 +639,21 @@ body {
     padding: 4vh 4.9vw;
   }
 
-  #page4 > h2 {
+  #page4>h2 {
     font-size: 4.4vmax;
     font-weight: 600;
     font-family: gilroy;
     /* background-color: red; */
   }
 
-  #page4 > h2 span {
+  #page4>h2 span {
     font-size: 4.4vmax;
     font-weight: 600;
     font-family: gilroy;
     color: #fc626a;
   }
 
-  #page4 > h4 {
+  #page4>h4 {
     font-size: 2.1vmax;
     font-weight: 500;
     margin-bottom: 3vmax;
@@ -661,7 +679,7 @@ body {
     box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.25);
   }
 
-  #page4 > a {
+  #page4>a {
     display: block;
     text-align: right;
     /* background-color: red; */
@@ -669,7 +687,7 @@ body {
     padding: 0 1vw;
   }
 
-  #page4 > a img {
+  #page4>a img {
     height: 6vmax;
   }
 }
@@ -881,7 +899,7 @@ body {
   justify-content: flex-end;
 }
 
-.page5 > h1 {
+.page5>h1 {
   font: 700 9vmax "Gilroy";
   font-weight: 900;
 }
@@ -935,7 +953,7 @@ footer span {
   color: #fc626a;
 }
 
-footer > img {
+footer>img {
   width: 1.8vmax;
   margin: 0 0.5vmax;
 }
@@ -952,7 +970,7 @@ a {
 }
 
 @media (max-width: 600px) {
-  .page5 > h1 {
+  .page5>h1 {
     font-size: 8.4vmax;
   }
 
@@ -965,7 +983,11 @@ a {
     font-size: 5vmax;
   }
 
-  footer > img {
+  footer>img {
     width: 3vmax;
+  }
+
+  #name-div {
+    display: none;
   }
 }
