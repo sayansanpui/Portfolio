@@ -182,12 +182,12 @@ body {
     /* height: 120px; */
     width: 100%;
     position: fixed;
-    top: 2vh;
+    top: 0vh;
     overflow: hidden;
     z-index: 99;
   }
 
-  #nav>a {
+  #sayan {
     font-size: 7vw;
     color: #fff;
     line-height: 7vw;
