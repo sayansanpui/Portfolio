@@ -423,7 +423,7 @@ body {
 }
 
 .about-btn {
-  margin-right: 5vh;
+  /* margin-right: 5vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,6 +440,10 @@ body {
 .about-btn img {
   padding: 0px 0px 10px 5px;
   height: 5.3vh;
+}
+
+.btn2 {
+  margin-left: 5vh;
 }
 
 .btn2 i {
@@ -516,11 +520,11 @@ body {
 
   #intro-div #prof {
     height: 70px;
-    width: 70%;
+    width: 80%;
     /* background-color: red; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 2vmax;
     margin-left: auto;
     margin-right: auto;
@@ -530,6 +534,37 @@ body {
     /* margin-left: -10px; */
     height: 9.9vmax;
     /* background-color: blue; */
+  }
+
+  .about-btn {
+    margin-right: 0.9vh;
+    border: 1px solid #58c2f9;
+    background: #58c2f9;
+  }
+
+  .about-btn a {
+    font-size: 1.8vmax;
+    font-family: gilroy;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .about-btn img {
+    padding: 0px 0px 10px 5px;
+    height: 4vh;
+  }
+
+  .btn2 {
+    margin: 0;
+    border: 1px solid #fa5a5a;
+    background: #fa5a5a;
+  }
+
+  .btn2 i {
+    font-size: 3.2vh;
+    color: #000;
+    margin-left: 10px;
   }
 }
 
